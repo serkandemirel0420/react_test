@@ -1,10 +1,11 @@
 import './App.css';
-
+import Parent from './Component/Parent';
+import Children from './Component/Children';
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                React test app!!!!!!! 
+                <Parent>  </Parent>
             </header>
         </div>
     );
