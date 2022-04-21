@@ -1,7 +1,8 @@
  
 
 import { useState } from "react";
-import Children from "./Children";
+import {MemoizedChildren} from "./Children";
+
 function App() {
     console.log("App");
   const [count, setCount] = useState(0);
@@ -10,7 +11,7 @@ function App() {
     <div>
       <button onClick={() => setCount((c) => c + 1)}> Increase {count}</button>
       <button onClick={() => setCount(0)}> reset {count}</button>
-      <Children count={count} />
+      <MemoizedChildren count={count} />
     </div>
   );
 }
