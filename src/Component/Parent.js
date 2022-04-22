@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <button onClick={() => setCount((c) => c + 1)}> Increase {count}</button>
-      <button onClick={() => setCount(0)}> reset {count}</button>
+      <button onClick={() => setCount(0)}> reset {0}</button>
       <MemoizedChildren count={0} />
     </div>
   );
