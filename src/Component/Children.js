@@ -1,6 +1,8 @@
+import { memo } from "react";
+
 function Children({count}) {
     console.log("Children");
-    return ( <div>Children {count} </div> );
+    return ( <div>Children  </div> );
 }
 
-export default Children;
+export default memo(Children);
